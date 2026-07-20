@@ -1,0 +1,14 @@
+# .gitignore
+build/
+*.o
+*.a
+*.so
+camellia-cli
+tools/bench
+tests/test_camellia
+python/libcamellia.so
+*.pyc
+__pycache__/
+
+# built binaries (root)
+bench
