@@ -134,5 +134,5 @@ cipher you can ship into a microcontroller, this is it.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Camellia algorithm itself is unpatented and
+Apache 2.0 — see [LICENSE](LICENSE). Camellia algorithm itself is unpatented and
 royalty-free (NTT/Mitsubishi).
