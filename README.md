@@ -1,5 +1,9 @@
 # Camellia — a clean C implementation
 
+[![Release](https://img.shields.io/github/v/release/kostyk348/camellia?sort=semver&color=blue)](https://github.com/kostyk348/camellia/releases)
+[![License](https://img.shields.io/badge/license-Apache-2.0-green)](https://github.com/kostyk348/camellia/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/kostyk348/camellia?branch=main)](https://github.com/kostyk348/camellia/commits/main)
+
 > *A forgotten Japanese cipher (NTT & Mitsubishi, 2000), revived as a small,
 > dependency-free, drop-in library for modern software and IoT/edge targets.*
 
@@ -38,6 +42,7 @@ portable C library you can actually drop into a project today.
 ## Build
 
 ### Make
+
 ```sh
 make            # builds static + shared lib, CLI, benchmark, runs tests
 make test       # run RFC 3713 self-test + mode roundtrips
@@ -45,11 +50,13 @@ make test       # run RFC 3713 self-test + mode roundtrips
 ```
 
 ### CMake
+
 ```sh
 cmake -S . -B build && cmake --build build && ctest --test-dir build
 ```
 
 ### Python bindings
+
 ```sh
 make python             # builds libcamellia.so into python/
 cd python && python3 camellia.py
@@ -76,8 +83,10 @@ camellia_decrypt(&ctx, CAMELLIA_MODE_CBC, iv, out, 16, pt);
 ```
 
 ### CLI
+
 ```sh
 # key = 001122... (32 hex bytes = 256-bit); IV optional (defaults to zero)
+
 camellia-cli enc -m cbc -k 00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff \
                  -v 00000000000000000000000000000000 -i plain.bin -o cipher.bin
 camellia-cli dec -m cbc -k <hexkey> -i cipher.bin -o plain.bin
@@ -85,6 +94,7 @@ camellia-cli bench 32     # MB/s throughput
 ```
 
 ### Python
+
 ```python
 from camellia import Camellia, pkcs7_pad, pkcs7_unpad
 c = Camellia(bytes(range(32)))
