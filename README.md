@@ -1,8 +1,19 @@
+<div align="center">
+
+<img src="docs/banner.svg" alt="camellia banner" width="1000">
+
 # Camellia — a clean C implementation
+
+### Camellia cipher (RFC 3713)
 
 [![Release](https://img.shields.io/github/v/release/kostyk348/camellia?sort=semver&color=blue)](https://github.com/kostyk348/camellia/releases)
 [![License](https://img.shields.io/badge/license-Apache-2.0-green)](https://github.com/kostyk348/camellia/blob/main/LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/kostyk348/camellia?branch=main)](https://github.com/kostyk348/camellia/commits/main)
+
+</div>
+
+---
+
 
 > *A forgotten Japanese cipher (NTT & Mitsubishi, 2000), revived as a small,
 > dependency-free, drop-in library for modern software and IoT/edge targets.*
