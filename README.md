@@ -19,7 +19,7 @@
 > dependency-free, drop-in library for modern software and IoT/edge targets.*
 
 Camellia is a 128-bit block cipher with **128/192/256-bit keys**, designed by
-[Nippon Telegraph and Telephone](https://www.ntt.co.jp) and
+[Nippon Telegraph and Telephone](https://group.ntt/en/) and
 [Mitsubishi Electric](https://www.mitsubishielectric.com) in 2000. It has the
 **same interface as AES** (block size + key sizes), was standardized as
 **ISO/IEC 18033-3**, selected by Japan's **CRYPTREC** and the EU's **NESSIE**
